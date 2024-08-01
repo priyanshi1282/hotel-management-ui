@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <label for="adminname">Adminname: <input type="text" id="adminname" name="adminname" required></label>
+        <br>
+        
+        <label for="password">Password: <input type="password" id="password" name="password" required></label>
+        <p id="password-error" class="red-text">Password must be 1-30 characters, including an uppercase letter, a lowercase letter, and a special character.</p>
+        <br>
+        <button type="submit">Login</button>
+        <p id="errorMessage" style="color: red; margin-top: 10px;"></p>
+    </form>
+    <script src="scripts/loginAdmin.js"></script>
+</body>
+</html>

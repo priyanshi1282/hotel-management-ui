@@ -1,0 +1,43 @@
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select{
+    width: 300px;
+    padding: 5px;
+    outline: none;
+}
+
+select{
+    width: 312px;
+}
+
+.green-box{
+    background-color: rgb(207, 255, 200);
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;
+    display: none;
+}
+
+.green-box h2, .green-box h3{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.green-box span{
+    background-color: rgb(113, 202, 99);
+    padding: 5px 10px;
+}

@@ -1,0 +1,67 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+form{
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+input, textarea{
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(165, 167, 165);
+    background-color: whitesmoke;
+}
+
+select{
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(165, 167, 165);
+    background-color: whitesmoke;
+}
+
+.red-text{
+    color: red;
+    background-color: rgb(250, 212, 212);
+    padding: 5px 10px;
+    font-size: 14px;
+    display: none;
+    text-align: right;
+}
+
+.text-green{
+    color: green;
+}
+
+button{
+    outline: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.green-btn{
+    background-color: rgb(38, 173, 29);
+    border: 2px solid rgb(157, 243, 157);
+
+}
+.red-btn{
+    border: 2px solid rgb(238, 150, 150);
+}

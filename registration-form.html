@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/registration.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="registration-done.html">
+        <h3>Personal Information</h5>
+      <label for="name"
+        >Name <input type="text" id="name" maxlength="50"
+      /></label>
+      <br />
+      <label for="email">Email*<input type="email" id="email" required /></label>
+      <br />
+      <label for="mobile"
+        >Mobile No.*
+        <div>
+          <select required>
+            <option disabled selected>select code</option>
+            <option value="+91">+91</option>
+            <option value="+91">+91</option>
+            <option value="+91">+91</option>
+          </select>
+          <input type="number" maxlength="10" id="mobile" />
+        </div>
+      </label>
+      <br />
+      <label for="address">Address <textarea id="address"></textarea></label>
+      <br><hr>  
+      <h3>Username & Password</h3>
+      <label for="username">Username* <input id="username" required type="text" maxlength="20" minlength="5" title="min len is 5 and max len is 20"></label>
+      <br>
+      <label for="password">Password* <input id="password" required type="password" maxlength="30" title="max 30 char, min one uppercase, lower case and special char"></label>
+      <p id="password-error" class="red-text">Password must be max of 30 character with one uppercase, lower case and special case character**</p>
+      <br>
+      <label for="confirmpass">Confirm Password* <input required id="confirmpass" type="password" maxlength="30"></label>
+      <p class="red-text" id="confirmpass-error">Password does not match**</p>
+      <br>
+      <button class="green-btn" type="submit" id="submit-btn">Register</button>
+      <button class="red-btn" type="reset">Reset</button>
+    </form>
+    <script src="scripts/registration.js"></script>
+  </body>
+</html>

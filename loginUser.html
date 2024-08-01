@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <h1>Customer Login</h1>
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <label for="username">Username: <input type="text" id="username" name="username" required></label>
+        <br>
+        
+        <label for="password">Password: <input type="password" id="password" name="password" required></label>
+        <p id="password-error" class="red-text">Password must be 1-30 characters, including an uppercase letter, a lowercase letter, and a special character.</p>
+        <br>
+        <button type="submit">Login</button>
+        <br>
+        <p id="errorMessage" style="color: red; margin-top: 20px;"></p>
+        <p style="margin-top: 10px;">Don't have account? <a href="registration-form.html">Sign up</a></p>
+    </form>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | User</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/reservation.css">
+</head>
+<body>
+    <!-- navbar component start -->
+    <header>
+        <nav>
+            <h3>Welcome User123</h1>
+            <div>
+                <a href="homePage.html">Home</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="billing.html">Billing Page</a>
+                <a href="history.html">History</a>
+                <a href="booking.html">Bookings</a>
+                <a href="contact.html">Contact Support</a>
+                <button><a href="loginUser.html">Logout</a></button>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar component start -->
+
+    <h1 class="text-center">Make your Reservation Today!</h1>
+    <form onsubmit="showReservation()">
+        <label for="check-in">Check-in Date <input type="date" id="check-in"></label>
+        <br>
+        <label for="check-out">Check-outDate <input type="date" id="check-out"></label>
+        <br>
+        <label for="guest">No. of Guest <input type="number"  id="guest"></label>
+        <br>
+        <label for="peference">Room Preference
+            <select id="peference">
+                <option value="value">value</option>
+                <option value="value">value</option>
+                <option value="value">value</option>
+            </select>
+        </label>
+        <br>
+        <label for="name">Name <input type="text" onkeydown="return /[a-z]/i.test(event.key)"></label>
+        <br>
+        <label for="contact">Contact <input type="number" maxlength="10"></label>
+        <br>
+        <button type="submit" class="btn" id="book">Book</button>
+    </form>
+    <div class="green-box text-center" id="reservation-done">
+        <h2>Reservation Successful <span> &#x2713; </span></h2>
+        <h3>Room ID: 23726</h3>
+    </div>
+
+    <script>
+        const book = document.getElementById('book');
+        const reservationDone = document.getElementById('reservation-done');
+        function showReservation(){
+            event.preventDefault();
+            reservationDone.style.display='block';
+        }
+        
+    </script>
+</body>
+</html>
