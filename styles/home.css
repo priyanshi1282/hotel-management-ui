@@ -1,0 +1,72 @@
+main {
+    background: url(../background.png) center/cover no-repeat;
+    height: 91.5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div{
+    background-color: rgba(47, 27, 4, 0.381);
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 7px solid white;
+}
+main h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+main p{
+    margin: 10px 0;
+    font-size: 3rem;
+    padding: 0;
+}
+
+form{
+    width:900px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px auto;
+}
+
+input{
+    width: 230px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgb(165, 167, 165);
+    background-color: whitesmoke;
+}
+
+section{
+    margin: 5%;
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.card h5, .card h3{
+    margin: 5px 0;
+    padding: 0;
+}
+
+.card p {
+    margin: 5px 0 10px;
+}
+
+footer{
+    background-color: rgb(66, 44, 2);
+    padding: 20px;
+    color: white;
+}

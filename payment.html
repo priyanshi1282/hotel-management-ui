@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | User</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/reservation.css">
+</head>
+<body>
+    <!-- navbar component start -->
+    <header>
+        <nav>
+            <h3>Welcome User123</h1>
+            <div>
+                <a href="homePage.html">Home</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="billing.html">Billing Page</a>
+                <a href="history.html">History</a>
+                <a href="booking.html">Bookings</a>
+                <a href="contact.html">Contact Support</a>
+                <button><a href="loginUser.html">Logout</a></button>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar component start -->
+    <h1 class="text-center">Make Payment</h1>
+    <form onsubmit="showConfirmation()">
+        <label for="total-bill">Total Bill Date <input type="text" id="total-bill" value="Rs. 9500" disabled></label>
+        <br>
+        <label for="card-no">Card Number <input type="number" id="card-no"></label>
+        <br>
+        <label for="name">Card Holder Name<input type="text"  id="name"></label>
+        <br>
+        <label for="date">Expiry Date<input type="text"  id="date"  placeholder="MM/YY"></label>
+        <br>
+        <label for="cvv">CVV <input type="number" maxlength="4" id="cvv"></label>
+        <br>
+        <button type="submit" class="btn" id="book">Pay Now</button>
+    </form>
+    <div class="green-box text-center" id="reservation-done">
+        <h2>Payment Successful <span> &#x2713; </span></h2>
+        <h3>Room ID: 23726</h3>
+    </div>
+
+    <script>
+        const book = document.getElementById('book');
+        const reservationDone = document.getElementById('reservation-done');
+        function showConfirmation(){
+            event.preventDefault();
+            reservationDone.style.display='block';
+        }
+        
+    </script>
+    
+</body>
+</html>

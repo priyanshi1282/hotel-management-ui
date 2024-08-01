@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-top: 20px;
+}
+.bill-box{
+    width: 900px;
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bill-box img{
+    width: 500px;
+}
+
+.bill-info-box{
+    padding: 20px;
+    height: 100%;
+    width: 400px;
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
+.bill-info-box h3{
+   margin: 10px 0;
+}
+
+.bill-info{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bill-info span{
+    color: #4d4b4b;
+}
+
+button{
+    margin-top: 10px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}

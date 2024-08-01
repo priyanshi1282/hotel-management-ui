@@ -1,8 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 body{
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +22,7 @@ label{
     justify-content: space-between;
 }
 
-input{
+input, textarea{
     width: 300px;
     padding: 5px;
     outline: none;
